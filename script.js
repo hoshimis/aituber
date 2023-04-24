@@ -1,5 +1,6 @@
 // ChatGPTへのリクエストを送る
 
+// TODO: .envに置換
 const OPENAI_URL = 'https://api.openai.com/v1/chat/completions'
 
 const getAITuberResponse = async (userComment) => {
@@ -77,7 +78,7 @@ const speakAITuber = async (text) => {
 }
 
 // Youtubeのライブ配信を監視する
-// TODO：YOUTUBE_DATA_API_KEYを自分のものに変更する
+// TODO：YOUTUBE_VIDEO_IDを自分のものに変更する
 const YOUTUBE_VIDEO_ID = ''
 
 const getLiveChatId = async (YOUTUBE_VIDEO_ID) => {
@@ -107,6 +108,7 @@ const getLiveChatId = async (YOUTUBE_VIDEO_ID) => {
 }
 
 // 一定間隔でコメントを取得して、コメントへの応答、応答されるコメントの抽出等をする関数
+// TODO：YOUTUBE_DATA_API_KEYを自分のものに変更する
 const YOUTUBE_DATA_API_KEY = ''
 // コメントの取得インターバル (ms)
 const INTERVAL_MILL_SECONDS_RETRIEVING_COMMENTS = 20000
